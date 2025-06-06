@@ -5,48 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asad Chaudhry</title>
     <!-- add icon on website rel and href? -->
-    <link rel="">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon-16x16.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="dark-mode-btn"> Dark Mode </button>
-    <h1> ALL Things Credit </h1>
-    <h2> Empowering Your Credit Journey </h2>
-    <nav> 
+
+    <nav>
+        <div class="nav-style"> 
         <!-- Make Skip Nav For Each Section -->
-        <ul>
-            <li> Credit Basics </li>
-            <li> Myth vs Fact </li>
-            <li> Understanding Scores </li>
-            <li> Choosing The Right Credit Card </li>
-        </ul>
+            <ul>
+                <li> <a> Credit Basics</a></li>
+                <li> <a> Myth vs Fact</a> </li>
+                <li> <a> Understanding Scores </a> </li>
+                <li> <a> Choosing The Right Credit Card </a> </li>
+            </ul>
+        </div>
     </nav>
 
-   <section> 
-    <div class="hero-imgs">
-        <img src="imgs/credit.jpg" alt="The definition of credit in the financial industry">
-        <img src="imgs/credit-score-image.jpg" alt="A scale of credit showing ranges of 300 - 850">
-    </div>
-    </section> 
+    <header>
+        <button id="dark-mode-btn"> Dark Mode </button>
+        <h1> ALL Things Credit </h1>
+        <h2> Empowering Your Credit Journey </h2>
+    </header>
 
-    <section>
-        <a> </a>
-        <a> </a>
-        <a> </a>
-    </section>
+    <main>
+    <section> 
+        <div class="hero-imgs">
+                <img class="card" src="imgs/credit.jpg" alt="The definition of credit in the financial industry"> 
+                <img class="card" src="imgs/credit-score-image.jpg" alt="A scale of credit showing ranges of 300 - 850">
+        </div>
+        </section> 
 
-    <section>
-        <h3> Common Misconceptions </h3>
-        
-    </section>
+        <section>
+            <a> </a>
+            <a> </a>
+            <a> </a>
+        </section>
 
-    <form>
-        <p> Sign up to learn more about credit!!! </p>
-        <label> Enter Name: </label>
-        <input placeholder="Barock Obama">
-        <label> Enter Email: </label>
-        <input placeholder="barack.obama@example.com">
-    </form>
+        <section>
+            <h3> Common Misconceptions </h3>
+            
+        </section>
+
+        <form>
+            <p> Sign up to Learn More About Credit! </p>
+            <label> Enter First Name: </label>
+            <input placeholder="Barack">
+            <label> Enter Last Name: </label>
+            <input placeholder="Obama">
+            <label for=""> Enter Email Address: </label>
+            <input type="email" placeholder="barack.obama@example.com">
+        </form>
+    </main>
+
+    <footer>
+        <p> Empowering Your Credit Journey </p>
+    </footer>
 
    
     <script src= "index.js"></script>
