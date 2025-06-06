@@ -37,6 +37,7 @@
             </section> 
 
             <section>
+                <h3> Credit Basics </h3>
                 <a> </a>
                 <a> </a>
                 <a> </a>
@@ -47,14 +48,25 @@
                 
             </section>
 
+            <section>
+                <h3> Understanding Scores </h3>
+                
+            </section>
+
+            <section>
+                <h3> Choosing The Right Credit Card </h3>
+                
+            </section>
+
             <form>
                 <p> Sign up to Learn More About Credit! </p>
                 <label> Enter First Name: </label>
-                <input placeholder="Barack">
+                <input type="text" placeholder="Barack" minlength="2" pattern="^[A-Za-z]+$" title="Only letters!" required>
                 <label> Enter Last Name: </label>
-                <input placeholder="Obama">
-                <label for=""> Enter Email Address: </label>
-                <input type="email" placeholder="barack.obama@example.com">
+                <input type="text" placeholder="Obama" minlength="2" pattern="^[A-Za-z]+$" title="Only letters!" required>
+                <label for=""> Enter Email: </label>
+                <input type="email" placeholder="barack.obama@example.com" required>
+                <button type="submit"> Submit </button>
             </form>
         </main>
 
