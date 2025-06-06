@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: sans-serif;
     background-color: teal;
-    text-align: center;
     color: white;
 }
 
@@ -16,7 +15,7 @@ body {
 }
 
 nav {
-    background-color: gray;
+    background-color: whitesmoke;
     padding: 1em;
 }
 
@@ -26,8 +25,8 @@ nav {
     justify-content: center;
 }
 
-.nav-style li a:hover{
-    color: red;
+.nav-style li a:hover {
+    color: coral
 }
 
 /* Images */
@@ -44,4 +43,5 @@ img {
 .card {
     margin: 0 10px;
 }
+
 
