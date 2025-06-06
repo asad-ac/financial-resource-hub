@@ -5,8 +5,11 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Asad Chaudhry</title>
             <!-- add icon on website rel and href? -->
-            <link rel="icon" type="image/x-icon" href="/imgs/favicon-16x16.png">
+            <link rel="icon" type="image/png" href="imgs/favicon-16x16.png">
             <link rel="stylesheet" href="styles.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
         </head>
     <body>
 
@@ -14,37 +17,39 @@
             <div class="nav-style"> 
             <!-- Make Skip Nav For Each Section -->
                 <ul>
-                    <li> <a href=""> Credit Basics</a></li>
-                    <li> <a href=""> Myth vs Fact</a> </li>
+                    <li> <a href=""> Credit Basics </a></li>
+                    <li> <a href=""> Myth vs Fact </a> </li>
                     <li> <a href=""> Understanding Scores </a> </li>
                     <li> <a href=""> Choosing The Right Credit Card </a> </li>
+                    <button id="dark-mode-btn"> Dark Mode </button>
                 </ul>
             </div>
         </nav>
 
         <header>
-            <button id="dark-mode-btn"> Dark Mode </button>
-            <h1> ALL Things Credit </h1>
+            <h1> CreditHub: ALL Things Credit </h1>
             <h2> Empowering Your Credit Journey </h2>
         </header>
 
         <main>
-        <section> 
-            <div class="hero-imgs">
+            <section> 
+                <div class="hero-imgs">
                     <img class="card" src="imgs/credit.jpg" alt="The definition of credit in the financial industry"> 
                     <img class="card" src="imgs/credit-score-image.jpg" alt="A scale of credit showing ranges of 300 - 850">
-            </div>
+                </div>
             </section> 
 
             <section>
                 <h3> Credit Basics </h3>
-                <a> </a>
+                
                 <a> </a>
                 <a> </a>
             </section>
 
             <section>
                 <h3> Myth vs Fact </h3>
+                <p> Myth: Keep Your Credit Utilization under 30% </p>
+                <p> </p>
                 
             </section>
 
@@ -59,21 +64,25 @@
             </section>
 
             <form>
-                <p> Sign up to Learn More About Credit! </p>
-                <label> Enter First Name: </label>
-                <input type="text" placeholder="Barack" minlength="2" pattern="^[A-Za-z]+$" title="Only letters!" required>
-                <label> Enter Last Name: </label>
-                <input type="text" placeholder="Obama" minlength="2" pattern="^[A-Za-z]+$" title="Only letters!" required>
-                <label for=""> Enter Email: </label>
-                <input type="email" placeholder="barack.obama@example.com" required>
+                <p> Sign up to receive credit tips directly to your inbox! </p>
+                <label for="firstName"> Enter First Name: </label>
+                <input id="firstName" type="text" placeholder="Warren" minlength="2" pattern="^[A-Za-z]+$" title="Only letters allowed" required>
+
+                <label for="lastName"> Enter Last Name: </label>
+                <input id="lastName" type="text" placeholder="Buffett" minlength="2" pattern="^[A-Za-z]+$" title="Only letters allowed" required>
+
+                <label id="email" for=""> Enter Email: </label>
+                <input id="email" type="email" placeholder="warren.buffett@gmail.com" required>
+
                 <button type="submit"> Submit </button>
             </form>
         </main>
 
         <footer>
             <p> Empowering Your Credit Journey </p>
+            <p> By Asad Chaudhry </p>
         </footer>
 
-        <script src= "index.js"></script>
+        <script src= "index.js" defer></script>
     </body>
 </html>
