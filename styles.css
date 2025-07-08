@@ -2,11 +2,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Happy Monkey", sans-serif;
-    /* background-color: teal;
-    color: white; */
-    background-color: white;
-    color: black;
+    background-color: #0000FF;
+    color: white;
     letter-spacing: 1.8px;
+}
+
+html {
+    scroll-padding-top: 3.1em; /* Adjust to match height of your navbar */
+}
+
+main {
+    margin-bottom: 60px;
 }
 
 header, .hero-imgs {
@@ -16,7 +22,7 @@ header, .hero-imgs {
 /* Navigation Bar */
 
 nav {
-    background-color: whitesmoke;
+    background-color: white;
     padding: 1em;
     position: fixed;
     top: 0;
@@ -30,17 +36,22 @@ nav {
     margin: 0;
     padding: 0;
     gap: 1em;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
 
 .nav-style li a {
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
-    justify-content: center;
+    padding: 1em;
+    color: #0000FF;
+    align-items: end;
 }
 
 .nav-style li a:hover {
-    color: red;
+    color: #0000FF;
+    font-size: 1.1rem;
 }
 
 header {
@@ -70,13 +81,22 @@ input {
     text-align: center;
 }
 
+form > button {
+    background-color: white;
+    color: black;
+}
+
 /* Footer */
+
 footer {
-    background-color: #D9EAEA;
-    padding: 2em;
-    border-top: 1px solid coral;
+    background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #0000FF;
 }
 
 /* Font Sizes */
@@ -85,4 +105,25 @@ h1, h2, h3 {
     font-size: 4rem;
 }
 
+/* Buttons */
+
+button {
+    border: none;
+    background-color: #0000FF;
+    border-radius: 20px;
+    padding: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Links */
+
+.links > ul > li > a {
+    color: white;
+    display: block;
+}
 
