@@ -354,6 +354,7 @@ button:hover {
 
 .rsvp-para {
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .theme-button {
@@ -365,6 +366,7 @@ button:hover {
   font-size: 1.125rem;
   display: block;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .rsvp-button {
@@ -393,10 +395,12 @@ input::placeholder {
 
 .flex-links {
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .event-begin {
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .rsvp-para {
@@ -825,7 +829,7 @@ footer > a:hover {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-items: center;
-    margin: 15px;
+    margin: 15px auto;
   }
 
   .header-central span {
@@ -840,6 +844,19 @@ footer > a:hover {
   
   #header-img {
     margin-top: 35px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
 
