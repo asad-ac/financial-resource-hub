@@ -1,109 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Credit Central</title>
-            <!-- add icon on website rel and href? -->
-            <link rel="icon" type="image/png" href="imgs/favicon-16x16.png">
-            <link rel="stylesheet" href="styles.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
-        </head>
-    <body>
+    <head>
+        <!-- head
 
-        <nav>
-            <div class="nav-style"> 
-            <!-- Make Skip Nav For Each Section -->
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Credit Central</title>
+    </head>
+    
+    <body>
+    <main>
+
+    <!-- navbar
+
+    Purpose:
+    - Navigation bar that allows users to jump to different sections of the webpage
+    - Also holds buttons for user settings (dark mode, reduce motion)
+
+    When To Modify:
+    - [ ] Project 4 (REQUIRED FEATURE)
+    - [ ] Project 5 (REQUIRED FEATURE) 
+    - [ ] Project 8 (STRETCH FEATURE) 
+    - [ ] Any time between / after
+    -->
+    <div class="navbar">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#credit-basics">Credit Basics</a></li>
+            <li><a href="#mythvfact"> Myth vs Fact</a></li>
+            <li><a href="#links">Links</a></li>
+            <button class="theme-button" id="theme-button"> Dark Mode </button>
+        </ul>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeBtn">&times;</button>
+    <div class="mobile-nav-content">
+        <a href="#home">Home</a>
+        <a href="#credit-basics">Credit Basics</a>
+        <a href="#mythvfact">Myth vs Fact</a>
+        <a href="#links">Links</a>
+        <button id="mobile-button" class="mobile-dark-mode-btn">Dark Mode</button>
+    </div>
+</div>
+
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+
+        <!-- <header>
+            <img id="header-img" src="img/favicon.png"/>
+            <h1> Credit Central </h1>
+            <h2>Empowering Your Credit Journey </h2>
+            <button type="button">Dark Mode </button>
+            <button type="button">Reduce Motion </button>
+        </header> -->
+
+        <!-- Add this inside your existing navbar, after your current nav links -->
+
+    <div id= "home" class="header-container header">
+        <div class="header-item">
+            <div class="header-left">
+                <img id="header-img" src="img/favicon.png" alt="Credit Central Logo" />
+            </div>
+            <div class="header-right">
+                <h1 class="header-central">Credit <span> Central </span></h1>
+                <h2 class="header-subtitle">Empowering Your Credit Journey</h2>
+                <a class="header-button" href="#sign-up">Newsletter Sign Up </a>
+                <a class="header-button" href="#right-card">Cashback vs Travel Points </a>
+            </div>
+            
+    </div>
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 class="about-event">About the Event</h2>
+        <!-- Rewrite this p tag -->
+         <div class="event-begin">
+        <p class="event-font">You just turned 18, or maybe you're beginning your credit journey a little later in life. Your credit score can affect whether you’ll qualify for things like credit cards, auto loans, and mortgages.
+         You'll also find out where you can learn more and the resources that can be used to manage credit throughout your life.</p>
+        <p class="event-font"> It's never too late to gain control of your financial history and become more attractive to lenders! </p>
+
+        <h4 class="call-underline">Take the first step!</h4>
+        <h3>What to Expect:</h3>
+        <ul class="event-font bullets">
+            <li> <i> Why does credit matter? Learn what credit is, the scale of credit scores, and the makeup of a credit score.</i></li>
+            <li> <i> There are many myths rolling around the internet. See which are false and later sign up for more knowledge your way.</i></li>
+            <li> <i> Did you know there are different types of credit cards? Future you might thank you, for taking the time to learn your options now.</i></li>
+        </ul>
+        </div>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 class="credit-basics" id="credit-basics">Credit Basics </h2>
+        
+        <div class="card-container">
+        <div class="card">
+            <img alt="What is Credit?" width="600px" src="img/credit.jpg"/>
+            <h3> What is Credit? </h3>
+            <p> Credit is like borrowing a <em>toy </em> and promising to return it. If you always return it on time, people trust you and let you borrow more. </p>
+        </div>
+        
+        <div class="card">
+            <img alt="Credit score ranges" width="600px" src="img/credit-score-image.jpg" />
+            <h3> What is the scale of a credit score? </h3>
+            <p>Credit scores range from 300-850 and there are different types of scores, lenders tend to use FICO scores. </p>
+        </div>
+
+        <div class="card">
+            <img alt="What makes up a credit score" width="600px" src="img/190906-CreditScore-Graphic.jpg"/>
+            <h3>What makes up a credit score? </h3>
+            <ul>
+                <li>Payment history - 35%</li>
+                <li>Amount owed - 30% </li>
+                <li>Length of credit history - 15%</li>
+                <li>New credit - 10%</li>
+                <li>Credit mix - 10%</li>
+            </ul>
+            <!-- <p> Payment history, amounts owed, length of credit history, new credit, and credit mix. With payment history being the most with 35%! </p> -->
+        </div>
+        </div>
+
+        <section id="mythvfact">
+            <h3 class="mythvfact"> Myth vs Fact </h3>
+
+            <div class="card-container"> 
+            <div class="card">
+                <h5> Myth: Keep Your Credit Utilization under 30% </h5>
                 <ul>
-                    <li> <a href="#credit-basics"> Credit Basics </a></li>
-                    <li> <a href="#myth-fact"> Myth vs Fact </a> </li>
-                    <li> <a href="#understand-scores"> Understanding Scores </a> </li>
-                    <li> <a href="#choosing-cards"> Choosing The Right Credit Card </a> </li>
-                    <li> <a href="#links"> Links </a> </li>
-                    <button id="dark-mode-btn"> Dark Mode </button>
+                    <li> Paying your statement balance by the due date keeps your credit in good standing. </li>
+                    <li> Avoid paying near your credit limit consistently, it can affect lenders' willingness to offer you credit and make you appear risky. </li>
+                    <li> If you pay one statment balance below 30%, it automatically maxes you're credit score as if you were well below 30% the previous months. Credit is a snapshot! </li>
+                </ul>
+                </div>
+            
+            <div class="card">  
+                <h5> Myth: Credit cards are bad </h5>
+                <ul>
+                    <li> Credit cards help establish a history of reliability to lenders. </li>
+                    <li> A strong credit history is important when applying for things like mortgages or new credit cards. </li>
+                    <li> Having an established credit history can help you qualify for better interest rates. </li>
+                </ul>
+                <!-- <p> Fact: Credit cards are a great way to establish history of being reliable to others especially when applying for things like a mortgage, or a credit card. Having an established history will allow you to get better rates </p> -->
+            </div>
+
+            <div class="card">
+                <h5> Myth: Pay off your balance right away </h5>
+                <ul>
+                    <li> Pay your statement balance in full by the due date to have it reported to credit bureaus. </li>
+                    <li> Paying off your card immediately after each use may result in no activity being reported. </li>
+                    <li> Waiting until the statement balance posts and paying it off maximizes your credit score. </li>
+                    <li> Only the statement balance is required by the due date; other charges roll over to the next billing cycle.</li>
+                </ul>
+                <!-- <p> Fact: Pay your statement balance in full by the due date. This allows the amount you owed to be posted to Credit Bureaus so they can see the amount you payed. If you pay off right away they never see anything. This is important because waiting maximizes your score! Not every time you use a credit card it is due in the upcoming due date. You're only responsibility is the statement balance. All others will get pushed onto the following due date. </p> -->
+            </div>
+                </div>
+        </section>
+
+    <section id="right-card">
+        <h3 class="right-card"> Choosing the Right Credit Card </h3>
+        <div class="card-container"> 
+            <div class="card">
+                <h6> Cash Back Cards </h6>
+                <ul>
+                    <li> Usually can cash out the percentage of each transaction back into your debit account. </li>
+                    <li> Each bank tends to have cash-back deals inside their platform from different locations. For example, their could be one that can enabled for SeatGeek that is 5% Cash-Back on BofA. </li>
+                    <li> Many cash back cards have no annual fees making it feasible for many. </li>
                 </ul>
             </div>
-        </nav>
-
-        <header>
-            <h1> Credit Central: ALL Things Credit </h1>
-            <h2> Empowering Your Credit Journey </h2>
-        </header>
-
-        <main>
-            <section> 
-                <div class="hero-imgs">
-                    <img class="card" src="imgs/credit.jpg" alt="The definition of credit in the financial industry"> 
-                    <img class="card" src="imgs/credit-score-image.jpg" alt="A scale of credit showing ranges of 300 - 850">
-                </div>
-            </section> 
-
-            <section id="credit-basics">
-                <h3> Credit Basics </h3>
-                <p> Pay your statement balance in full by the due date </p>
-                <h4> What is a credit limit? </h4>
-                <p> A credit limit is the amount you are able to spend using that line of credit. If you have multiple credit cards, the credit limit are cumulative. For example, if I had two credit cards, and one of them had a Credit Limit of 5000 and the other had a limit of 1000. This means I have a total of 6000, which is what is checked when people are worried about keeping there credit utilization, The total credit limit of all lines. Though, credit utilization is not something that should be worried about unless you're applying for a mortgage. Just pay your statement balance in full by the date. </p>
-                <a> </a>
-                <a> </a>
-            </section>
-
-            <section id="myth-fact">
-                <h3> Myth vs Fact </h3>
-                <p> Myth: Keep Your Credit Utilization under 30% </p>
-                <h5> Myth: Credit cards are bad </h5>
-                <p> Fact: Credit cards are a great way to establish history of being reliable to others especially when applying for things like a mortgage, or a auto loan. Having an established history will allow you to get better rates </p>
-                <p> Myth: Pay off your balance right away </p>
-                <p> Fact: Pay your statement balance in full by the due date. This allows the amount you owed to be posted to Credit Bureaus so they can see the amount you payed. If you pay off right away they never see anything. This is important because waiting maximizes your score! Not every time you use a credit card is due, in the very next due date. You're only responsibility is the statement balance. All others will get pushed onto the following due date. I really hope that makes sense. </p>
-            </section>
-
-            <section id="understand-scores">
-                <h3> Understanding Scores </h3>
-                <p> If there's one thing I need you to take away from this site, is to <span> Pay your statement balance in full by the due date</span></p>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo nulla ducimus, magni voluptatum nobis alias dicta? Sapiente fugit perspiciatis praesentium consectetur quam tenetur, vero, odit adipisci, beatae rem quis? </p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem iusto, laudantium quis voluptate pariatur expedita sit illum voluptates sed magnam excepturi sunt aperiam eaque alias architecto unde consequatur dicta?
-                
-            </section>
-
-            <section id="choosing-cards">
-                <h3> Choosing The Right Credit Card </h3>
-                <p> I wanted to go over this since, many people when they first become eligible (18+) first line of credit ends up being a credit card.</p>
-                <p> As a noob (18) Unless you're an authorized user you're probably not going to be able to get those gold cards or those super high tier cards right away. You have to start from the ground up, unless you're an authorized user but even then it's not under your name. So to best build habits and keeping your money in check, I reccomend the most common cards tend to be Discover Student card or Capital one's Student card which will have extremely low credit limits to start but once you start paying the statement balance in full by the due date. The bank will see that and they will raise your Credit Limit typically every 6 months automatically. Though you can also request an limit, and potentially how much and that will be up to the bank to decide given your financial history and income.</p>
-            </section>
-
-            <form>
-                <p> Sign up to receive credit tips directly to your inbox! </p>
-                <label for="firstName"> Enter First Name: </label>
-                <input id="firstName" type="text" placeholder="Warren" minlength="2" pattern="^[A-Za-z]+$" title="Only letters allowed" required>
-
-                <label for="lastName"> Enter Last Name: </label>
-                <input id="lastName" type="text" placeholder="Buffett" minlength="2" pattern="^[A-Za-z]+$" title="Only letters allowed" required>
-
-                <label id="email" for=""> Enter Email: </label>
-                <input id="email" type="email" placeholder="warren.buffett@example.com" required>
-
-                <button type="submit"> Submit </button>
-            </form>
-
-            <section id="links" class="links">
-                <h1> Links </h1>
-                <ul> 
-                    <li> <a href="https://www.annualcreditreport.com/index.action" target="_blank"> Free Credit Report once every 12 months from Experian, TransUnion, and Equifax. </a></li>
-                    <li> <a href="https://www.experian.com" target="_blank"> Experian</a> </li>
-                    <li> <a href="https://www.transunion.com" target="_blank"> TransUnion</a> </li>
-                    <li> <a href="https://www.equifax.com" target="_blank"> Equifax</a> </li>
+            <div class="card">
+                <h6> Travel Point Cards </h6>
+                <ul>
+                    <li> Will not deposit into bank account typically, but will get points towards free hotels or flights. </li>
+                    <li> Each bank tends to have different partners with hotels and flights. Meaning more research is required but it can have a higher ceiling than a cash back card depending on the travel card.</li>
+                    <li> Some travel cards have annual fees, particularly those that can offer more travel points and are theoretically reserved for those with extensive credit history and being able to afford so. </li>
                 </ul>
-                <p> Can access for free as well individually with an account or phone call to these bureaus! FYI: In your banking app or services such as Credit Karma tend to only show one of the bureaus above on the platform. Lots of different types of Fico's but most important is FICO8 from Experian. VantageScore isn't commonly used by lenders and is the one that is usually posted.</p>
-            </section>
-        </main>
+            </div>
+        </div>
+    </section>
+
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+
+        <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+-->
+<section id="sign-up">
+<div id="rsvp">
+    <h2 class="rsvp">Newsletter</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <p>Sign up to receive <strong> credit tips for free </strong> directly to your inbox! </p>
+            <p> What better way to start your mornings than with a tiny bit <br> of financial advice? Through weeks, months, and years <br> that can compound to help you flourish. You'll also be <br> able to share your knowledge with those around you <br> and help them level up. </p>
+        </div>
+        <div class="rsvp-participants">
+            <p>✉️ Oliver from Texas has joined.</p>
+            <p>✉️ Shea from New York has joined.</p>
+            <p>✉️ Valerie from Georgia has joined.</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <!-- form inputs go here -->
+             <label class="rsvp-label" for="name-input"> Name: </label>
+             <input class="rsvp-input" id="name-input" type="text" required placeholder="Warren">
+        
+             <label class="rsvp-label" for="state-input"> State: </label>
+             <input class="rsvp-input" id="state-input" type="text" required placeholder="Arizona">
+             
+             <label class="rsvp-label" for="email-input"> Email: </label>
+             <input class="rsvp-input" id="email-input" type="email" required placeholder="warren@example.com">
+        </form>
+        <!-- Submit button -->
+         <div class="button-place"> 
+            <button class="rsvp-button" id="rsvp-button">Submit </button>
+         </div>
+    </div>      
+</div>
+ </section>
+
+    <!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+        <div id="success-modal" class="modal">
+            <div id="thanks-content-modal" class="modal-container">
+                <div class="modal-content">
+                <div class="modal-text">
+                    <p class="modal-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio vitae, autem sunt sequi assumenda repellendus rem praesentium perferendis numquam reiciendis natus omnis aut dolorem eligendi, quisquam quia excepturi laboriosam.</p>
+                </div>
+                <div class="modal-image">
+                    <img src="img/pngtree-hands-holding-dollar-bills-and-small-money-wallet-png-image_924047.jpg" alt="exchanging money for credit"/>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 class="links" id="links">Links</h2>
+
+        <section class="style-links">
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+            <div class="flex-links">
+        <a class="block link" href="https://www.annualcreditreport.com/index.action" target="_blank">
+            <article>
+                <h3>Free Credit Report</h3>
+                <p>This is a free credit report available once every 12 months from the three major credit bureaus.</p>
+            </article>
+        </a>
+
+         <a class="block link" href="https://consumer.ftc.gov/credit-loans-and-debt/credit-and-debt" target="_blank">
+            <article>
+                <h3>Federal Trade Commission (FTC)</h3>
+                <p>The FTC enforces laws and regulations to help protect you. They also provide guidance on how to dispute credit report errors. </p>
+            </article>
+        </a>
+
+         <!-- <a class="block" href="https://www.transunion.com/">
+         <a class="block" href="https://www.equifax.com/"></a>
+         <a class="block" href="https://www.experian.com/"></a>
+            <article>
+                <h3>TransUnion, Equifax, and Experian are the 3 major Credit Bureaus! They all have there own credit score that can be checked individually for free anytime if you've already used your yearly annualcreditreport.com that gathers all 3 bureaus reports for you!</h3>
+                <p>Link description</p>
+            </article>
+        </a> -->
+
+        <article class="margin link">
+            <h3>TransUnion, Equifax, and Experian</h3>
+            <p>
+                These are the 3 major credit bureaus. You can check your credit score directly from each:
+                <a  class="block" href="https://www.transunion.com/" target="_blank">TransUnion</a> |
+                <a class="block" href="https://www.equifax.com/" target="_blank">Equifax</a> |
+                <a class="block" href="https://www.experian.com/" target="_blank">Experian</a>
+            </p>
+        </article>
+    </div>
+    </section>
+
+    </main>
+
+
+         <!-- <a class="block" href="https://www.codepath.org">
+            <article>
+                <h3>Equifax</h3>
+                <p>Link description</p>
+            </article>
+        </a> -->
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
 
         <footer class="footer">
             <p> Empowering Your Credit Journey </p>
-            <p> By Asad Chaudhry </p>
+            <p class="email"> <a href="mailto:asadachau@gmail.com" target="_blank"  title="We’d love your thoughts!"> Email Feedback </a> </p>
             <p> 2025 © All Rights Reserved </p>
         </footer>
 
-        <script src= "index.js" defer></script>
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+        <script src="index.js" defer></script>
     </body>
 </html>

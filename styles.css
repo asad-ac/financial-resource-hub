@@ -1,132 +1,847 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: #0000FF;
-    color: white;
-    letter-spacing: 1.8px;
-}
+/*** You will not need this file until Unit 3 ***/
 
-/* #0000FF */
+/*** VSCodeEDU preview fix 
 
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
 html {
-    scroll-padding-top: 3.125em; /* Adjust to match height of your navbar */
+    scroll-padding-top: 80px;
 }
 
 main {
-    margin-bottom: 4.5em;
+  margin-bottom: 85px;
 }
 
-.hero-imgs {
-    flex-wrap: wrap;
+.header-central {
+  text-decoration: underline;
+  font-size: 7rem;
+}
+
+.header-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  margin: 30px 20px 80px 20px;
+  width: 100%;
+  max-width: 100%;
+}
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+body {
+    /* Add a background color or image */
+    background-color: var(--bg-color); /* see bottom of file for color variables */
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 18px;
+    color: var(--text-color);
+    font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+    /* Put space around the edges of the webpage */
+    margin: 0 50px;
+    scroll-behavior: smooth;
 }
 
 
-/* Navigation Bar */
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
 
-nav {
-    background-color: white;
-    padding: 1em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+    background-color: dodgerblue;
+    font-family: sans-serif;
+    font-size: 48px;
+    color: white;
+    /* display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px; */
 }
 
-.nav-style ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 1em;
-    justify-content: space-evenly;
-    align-items: center;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Happy Monkey", sans-serif;
 }
 
-.nav-style li a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #0000FF;
-
+article h3 {
+  font-family: Tahoma, sans-serif;
 }
 
-.nav-style li a:hover {
-    color: #0000FF;
-    font-size: 1.1rem;
+.event-font {
+  font-size: 1.25rem;
 }
 
-header {
-    padding-top: 3em;
+.bullets {
+  max-width: 75%;
 }
 
-/* Images */
-
-img {
-    width: 300px;
-    border-radius: 20px;
+h1 {
+  font-size: 4rem;
 }
 
-/* .hero-imgs {
-    display: flex;
-    justify-content: center;
-} */
-
-.card {
-    margin: 0 0.5em;
+h2 {
+    
 }
 
-/* Form */
-
-input {
-    width: 170px;
-    display: block;
-    text-align: center;
+h3 {
+    
 }
 
-form > button {
-    background-color: white;
-    color: black;
+h4 {
+    
 }
 
-/* Footer */
-
-.footer {
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #0000FF;
+p {
+    
 }
 
-/* Font Sizes */
-
-h1, h2, h3 {
-    font-size: 4rem;
-    font-family: "Happy Monkey";
+a,
+a * {
+    
 }
 
-/* Buttons */
+a:link {
+    color: inherit;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:focus {
+  color: goldenrod;
+} 
+
+a:hover {
+  color: goldenrod;
+}
+
+a:active {
+    color: goldenrod;
+}
 
 button {
-    border: none;
-    background-color: #0000FF;
-    border-radius: 20px;
-    padding: 1em;
-    font-weight: bold;
+    /* Example Style, replace with your own! */
+    background-color: goldenrod;    /* button color */
     color: white;
+    font-size: .6rem;              /* text color */
+    border: none;               /* hides the default border */
+    padding: 7px 14px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: pointer;  
+    margin: 10px;
+    font-family: Tahoma, sans-serif;   /* makes the cursor change when over button */
 }
 
 button:hover {
+    /* Make the button look different when the user hovers over it */
+}
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header-container { /* Example A: This styles elements with class="header" */
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.header-container h1 {
+    display: inline-block;
+    padding: 7.5px 17px;
+    border-radius: 10px;
+}
+
+#header-left {
+    width: 60%;
+}
+
+#header-right {
+    width: 40%;
+}
+
+#header-img {
+    width: 300px;
+    margin-left: 35px;
+    margin-right: 10px;
+    max-width: 400px;
+}
+
+.header-button {
+    font-family: bold;
+    margin-right: 15px;
+    background-color: #0000FF;    /* button color */
+    color: white;               /* text color */
+    border: none;               /* hides the default border */
+    padding: 7px 14px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
     cursor: pointer;
+    text-decoration: none;
 }
 
-/* Links */
+.header-button:visited {
+  color: white;
+}
 
-.links > ul > li > a {
-    color: white;
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer { /* Example B: This styles elements with class="footer" */
+    
+}
+
+/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
+
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.navbar {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    /* Change margin-bottom when appropriate */
+    background-color: var(--navbar-and-footer-bg);
+    display: flex;
+    align-items: center;
+    padding: .25em;
+    border-bottom: 3px solid dodgerblue;
+}
+
+.navbar button {
+  float: left;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+.navbar ul li a {
     display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color-dark-mode);
 }
 
+.navbar ul li a:hover {
+    font-size: 1.1rem;
+    color: gold;
+}
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.rsvp-para {
+  margin-left: 20px;
+}
+
+.theme-button {
+  font-size: .8rem;
+  font-weight: 400px;
+}
+
+.rsvp-button {
+  font-size: 1.125rem;
+  display: block;
+  margin-right: 20px;
+}
+
+.rsvp-button {
+}
+
+.form-container {
+}
+
+.rsvp-input {
+}
+
+.rsvp-label {
+  margin-left: 40px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 4px;
+  width: 170px;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.flex-links {
+  margin-left: 20px;
+}
+
+.event-begin {
+  margin-left: 20px;
+}
+
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.rsvp-participants {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.error {
+  /* border-style: solid;
+  border-width: 2px;
+  border-color: red; */
+  border: 2px solid red;
+  background-color: rgb(255, 204, 203);
+  /* Set border-color and background */
+}
+
+/* Add other rsvp-related selectors here */
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+
+
+/*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 55%;
+    border-radius: 10px;
+    /* Customize modal style here */
+    background-color: dodgerblue;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+
+}
+
+.modal-item {
+    /* Optional: Style individual elements within the modal */
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.modal-text {
+  font-size: 2rem;
+  color: white;
+}
+
+.event-begin i {
+  line-height: 1.5px;
+}
+
+
+
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+/* Default dark mode style */
+.dark-mode {
+  color: var(--text-color-dark-mode);
+  background-color: var(--bg-color-dark-mode)
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1 {
+}
+.dark-mode h2 {
+}
+
+.dark-mode .hamburger span {
+  background-color: var(--text-color-dark-mode);
+}
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+  
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: #F4F6F8;
+    /* #a6a0cf */
+    --text-color: #1C1F26;
+    /* #231942; */
+
+    /* Dark Mode */
+    --bg-color-dark-mode:#0D1B2A;
+    --text-color-dark-mode:#E1EAF2;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    --card: #bfc3c9;
+    --navbar-and-footer-bg: #263B50;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: smaller;
+  color: var(--text-color-dark-mode);
+  background-color: var(--navbar-and-footer-bg);
+  border-top: 3px solid dodgerblue;
+}
+
+.footer a:hover {
+  color: var(--text-color-dark-mode);;
+}
+
+.block > h3 {
+  text-decoration: underline;
+}
+
+.block > p {
+  text-decoration: underline;
+}
+
+ul.event-font.bullets li {
+    margin-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 40px 20px;
+}
+
+.card {
+  /* background-color: var(--card); */
+  background-color: var(--card);
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1 1 30%;
+  max-width: 80%;
+  text-align: center;
+}
+
+/* .card:hover { */
+  /* transform: scale(1.1); Slightly increase the box size */
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); Add a shadow */
+/* } */
+
+.card ul {
+  text-align: center;
+}
+
+.card ul li{
+  text-align: left;
+  color: #333;
+  letter-spacing: .1em;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.card img {
+  width: 70%;
+  max-width: 70%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #0000FF;
+}
+
+.card p {
+  font-size: 1.25rem;
+  color: #333;
+  letter-spacing: .1em;
+}
+
+.card h5 {
+  color: red;
+  font-size: 2rem;
+}
+
+.card h6 {
+  color: green;
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+.header-subtitle {
+  margin-top: 0;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.about-event, .credit-basics, .mythvfact, .rsvp, .links, .right-card {
+  font-size: 3rem;
+  margin-top: 40px;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Hamburger menu styles - hidden by default */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger span {
+    width: 30px;        /* Make wider */
+    height: 4px;        /* Make thicker */
+    background-color: black;
+    margin: 4px 0;      /* More spacing */
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Mobile navigation overlay */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(74, 85, 104, 0.95);
+    z-index: 1000;
+    padding-top: 80px;
+}
+
+.mobile-nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav a:hover {
+    color: #d69e2e;
+}
+
+.mobile-dark-mode-btn {
+    background-color: #d69e2e;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.style-links {
+  font-size: 1.25rem;
+}
+
+.call-underline {
+  text-decoration: underline;
+}
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.addunderline {
+  text-decoration: underline;
+}
+
+footer > a:hover {
+  color: goldenrod;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media(max-width: 1000px){
+  .card-container {
+    flex-wrap: wrap;
+  }
+
+  input {
+    display: block;
+  }
+
+  .header-button {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .rsvp-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+    .flex-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    display: block;
+  }
+
+  .header-item {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px;
+  }
+
+  .header-central span {
+    display: block;
+  }
+
+  .header-left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  #header-img {
+    margin-top: 35px;
+  }
+
+
+  
+  }
