@@ -198,7 +198,7 @@ button:hover {
 }
 
 .header-button {
-    font-family: bold;
+    font-family: Tahoma, sans-serif;
     margin-right: 15px;
     background-color: #0000FF;    /* button color */
     color: white;               /* text color */
