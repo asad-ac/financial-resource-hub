@@ -671,6 +671,7 @@ ul.event-font.bullets li {
   text-align: center;
   border: 3px solid dodgerblue;
   line-height: 1.4;
+  transition: all 0.3s ease;
 }
 
 #green-border {
