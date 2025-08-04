@@ -142,7 +142,7 @@ const toggleModal = (person) => {
 
     modal.style.display = 'flex';
 
-    modalContent.textContent = `Thank you for signing up, ${person.name}! Don't forget to look at the links section for more resources.`
+    modalContent.textContent = `Thank you for signing up, ${person.name}! Don't forget to look at the 'Links' section for more resources.`
     
     // TODO: Update modal display to flex
     

@@ -14,7 +14,7 @@ html {
 }
 
 main {
-  margin-bottom: 85px;
+  margin-bottom: 100px;
 }
 
 .header-central {
@@ -132,6 +132,10 @@ a:focus {
 } 
 
 a:hover {
+  color: goldenrod;
+}
+
+footer a:hover {
   color: goldenrod;
 }
 
@@ -259,7 +263,7 @@ button:hover {
     margin-top: 0;
     margin-bottom: 20px;
     /* Change margin-bottom when appropriate */
-    background-color: var(--navbar-and-footer-bg);
+    background-color: #2e3a59;
     display: flex;
     align-items: center;
     padding: .25em;
@@ -364,9 +368,9 @@ button:hover {
 
 .rsvp-button {
   font-size: 1.125rem;
-  display: block;
-  margin-right: 20px;
-  margin-left: 20px;
+  display: inline-block;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .rsvp-button {
@@ -502,6 +506,10 @@ input::placeholder {
   line-height: 1.5px;
 }
 
+#card-border {
+  border: 3px solid red;
+}
+
 
 
 /*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
@@ -512,11 +520,69 @@ input::placeholder {
   background-color: var(--bg-color-dark-mode)
 }
 
+.dark-mode .card {
+  border: 1px solid #005596;
+}
+
 /* Example: Different dark mode style for h1 */
 .dark-mode h1 {
 }
 .dark-mode h2 {
 }
+
+.dark-mode .footer {
+  background-color: var(--navbar-and-footer-bg);
+}
+
+.dark-mode .navbar ul {
+  background-color: var(--navbar-and-footer-bg);
+}
+
+.dark-mode .about-event,
+.dark-mode .credit-basics,
+.dark-mode .mythvfact,
+.dark-mode .rsvp,
+.dark-mode .links,
+.dark-mode .right-card {
+background-color: #005596;
+}
+
+.dark-mode .navbar ul {
+  border-bottom: 3px solid #005596;
+}
+
+.dark-mode .footer {
+  border-top: 3px solid #005596;
+}
+
+.dark-mode .header-central {
+  background-color: #1E40AF;
+}
+
+.dark-mode footer a:hover {
+  color: darkgoldenrod;
+}
+
+.dark-mode .theme-button {
+  background-color: darkgoldenrod;
+}
+
+.dark-mode .rsvp-button {
+  background-color: darkgoldenrod;
+}
+
+.dark-mode a:hover {
+  color: darkgoldenrod;
+}
+
+.dark-mode .navbar ul:hover {
+  color: darkgoldenrod;
+}
+
+.dark-mode .header-button:hover {
+  color: white;
+}
+
 
 .dark-mode .hamburger span {
   background-color: var(--text-color-dark-mode);
@@ -572,12 +638,8 @@ input::placeholder {
   justify-content: space-around;
   font-size: smaller;
   color: var(--text-color-dark-mode);
-  background-color: var(--navbar-and-footer-bg);
+  background-color: #2e3a59;
   border-top: 3px solid dodgerblue;
-}
-
-.footer a:hover {
-  color: var(--text-color-dark-mode);;
 }
 
 .block > h3 {
@@ -601,14 +663,19 @@ ul.event-font.bullets li {
 
 .card {
   /* background-color: var(--card); */
-  background-color: var(--card);
+  background-color: white;
   border-radius: 15px;
   padding: 20px;
   flex: 1 1 30%;
   max-width: 80%;
   text-align: center;
+  border: 3px solid dodgerblue;
+  line-height: 1.4;
 }
 
+#green-border {
+  border: 3px solid green;
+}
 /* .card:hover { */
   /* transform: scale(1.1); Slightly increase the box size */
   /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); Add a shadow */
@@ -621,10 +688,11 @@ ul.event-font.bullets li {
 .card ul li{
   text-align: left;
   color: #333;
-  letter-spacing: .1em;
   margin-bottom: 10px;
   font-size: 1.25rem;
 }
+
+
 
 .card img {
   width: 70%;
@@ -642,7 +710,6 @@ ul.event-font.bullets li {
 .card p {
   font-size: 1.25rem;
   color: #333;
-  letter-spacing: .1em;
 }
 
 .card h5 {
@@ -656,27 +723,39 @@ ul.event-font.bullets li {
   margin: 15px 0;
 }
 
+.myth-header {
+  line-height: 1.3;
+  font-weight: bold;
+  color: black;
+}
+
 .header-subtitle {
   margin-top: 0;
   font-size: 3.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .header-left {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.about-event, .credit-basics, .mythvfact, .rsvp, .links, .right-card {
+.about-event, .credit-basics, .mythvfact, .rsvp, .links, .right-card, .starter-cards  {
   font-size: 3rem;
   margin-top: 40px;
-  background-color: dodgerblue;
+  margin-bottom: 40px;
+  background-color: #1E40AF;
   color: white;
   text-align: center;
   padding: 15px;
   border-radius: 10px;
 }
 
+.bold-bullets {
+  letter-spacing: 0;
+  line-height: 1.3;
+}
 /* Hamburger menu styles - hidden by default */
 .hamburger {
     display: none;
@@ -774,9 +853,216 @@ ul.event-font.bullets li {
   text-decoration: underline;
 }
 
-footer > a:hover {
-  color: goldenrod;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.credit-cards-header {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.credit-cards-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.credit-cards-header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 40px 20px;
+}
+
+.credit-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  flex: 1;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.credit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.savor-card {
+  border-color: #dc2626;
+}
+
+.discover-card {
+  border-color: #f97316;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.card-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.savor-card .card-title {
+  color: #dc2626;
+}
+
+.discover-card .card-title {
+  color: #f97316;
+}
+
+.card-subtitle {
+  color: #666;
+  font-size: 1.1em;
+}
+
+.highlights {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.highlights h3 {
+  color: #1e40af;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1.1em;
+  color: black;
+}
+
+.highlight-item:last-child {
+  margin-bottom: 0;
+}
+
+.checkmark {
+  color: #10b981;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.features {
+  margin-bottom: 25px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.features h3 {
+  color: #374151;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+  color: #4b5563;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.cta-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.savor-card .cta-button {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.savor-card .cta-button:hover {
+  background: linear-gradient(135deg, #b91c1c, #dc2626);
+  transform: translateY(-2px);
+}
+
+.discover-card .cta-button {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+}
+
+.discover-card .cta-button:hover {
+  background: linear-gradient(135deg, #ea580c, #f97316);
+  transform: translateY(-2px);
+}
+
+.comparison {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+.comparison h2 {
+  color: #1e40af;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.comparison-header {
+  font-weight: bold;
+  color: #374151;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+
+.comparison-item {
+  padding: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.comparison-item:last-of-type {
+  border-bottom: none;
+}
+
+
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
@@ -791,6 +1077,10 @@ footer > a:hover {
 
 @media(max-width: 1000px){
   .card-container {
+    flex-wrap: wrap;
+  }
+
+  .cards-section {
     flex-wrap: wrap;
   }
 
@@ -813,7 +1103,13 @@ footer > a:hover {
   .card-container {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+  }
+
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
 
     .flex-links {
