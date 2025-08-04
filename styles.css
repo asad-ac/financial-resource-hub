@@ -10,8 +10,10 @@
   - If you change the background color of your webpage, you may need to update this rule too.
 ***/
 html {
-    scroll-padding-top: 80px;
+    scroll-padding-top: 90px;
+    overflow-y: scroll;
 }
+
 
 main {
   margin-bottom: 100px;
@@ -268,7 +270,9 @@ button:hover {
     align-items: center;
     padding: .25em;
     border-bottom: 3px solid dodgerblue;
+    gap: 10px;
 }
+
 
 .navbar button {
   float: left;
@@ -859,25 +863,6 @@ ul.event-font.bullets li {
   margin: 0 auto;
 }
 
-.credit-cards-header {
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
-  color: white;
-  padding: 40px;
-  border-radius: 12px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.credit-cards-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.credit-cards-header p {
-  font-size: 1.2em;
-  opacity: 0.9;
-}
-
 .cards-section {
   display: flex;
   justify-content: space-between;
@@ -960,7 +945,7 @@ ul.event-font.bullets li {
 .checkmark {
   color: #10b981;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 30px;
   font-size: 1.2em;
 }
 
@@ -992,78 +977,6 @@ ul.event-font.bullets li {
 .feature-list li:last-child {
   border-bottom: none;
 }
-
-.cta-button {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.savor-card .cta-button {
-  background: linear-gradient(135deg, #dc2626, #ef4444);
-}
-
-.savor-card .cta-button:hover {
-  background: linear-gradient(135deg, #b91c1c, #dc2626);
-  transform: translateY(-2px);
-}
-
-.discover-card .cta-button {
-  background: linear-gradient(135deg, #f97316, #fb923c);
-}
-
-.discover-card .cta-button:hover {
-  background: linear-gradient(135deg, #ea580c, #f97316);
-  transform: translateY(-2px);
-}
-
-.comparison {
-  background: white;
-  border-radius: 16px;
-  padding: 30px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  margin-top: 30px;
-}
-
-.comparison h2 {
-  color: #1e40af;
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 2em;
-}
-
-.comparison-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  text-align: center;
-}
-
-.comparison-header {
-  font-weight: bold;
-  color: #374151;
-  padding: 15px;
-  background: #f8fafc;
-  border-radius: 8px;
-  font-size: 1.1em;
-}
-
-.comparison-item {
-  padding: 15px;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.comparison-item:last-of-type {
-  border-bottom: none;
-}
-
-
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
