@@ -135,14 +135,14 @@ submitBtn.addEventListener('click', validateForm)
   - [ ] Any time after
 ***/
 
-const toggleModal = (person) => {
+let modal = document.getElementById('success-modal'); // thanks model replacement?
+let modalContent = document.querySelector('.modal-paragraph');
 
-    let modal = document.getElementById('success-modal'); // thanks model replacement?
-    let modalContent = document.querySelector('.modal-paragraph');
+const toggleModal = (person) => {
 
     modal.style.display = 'flex';
 
-    modalContent.textContent = `Thank you for signing up, ${person.name}! Don't forget to look at the 'Links' section for more resources.`
+    modalContent.innerHTML = `<p> Well done <span class="js-name"> ${person.name}! </span> Don't forget to look at the 'Links' section for more resources </p>`
     
     // TODO: Update modal display to flex
     
@@ -158,10 +158,16 @@ const toggleModal = (person) => {
     setTimeout(() => {
       modal.style.display = 'none'
       clearInterval(intervalId)
-    }, 7000);
+    }, 9000);
 
     
 }
+
+const closeModal = document.getElementById('close-modal');
+
+closeModal.addEventListener('click', function(){
+  modal.style.display = 'none';
+})
 
 // TODO: animation variables and animateImage() function
 
