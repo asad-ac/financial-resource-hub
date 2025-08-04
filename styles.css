@@ -480,6 +480,12 @@ input::placeholder {
     font-family: sans-serif;
     /* Optional: Use flexbox to customize .modal-item layout */
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.modal-message {
 }
 
 .modal-item {
@@ -983,14 +989,12 @@ ul.event-font.bullets li {
 }
 
 .close-modal {
-  display: inline;
-  float: right;
+  position: absolute;
   color: red;
+  top: 15px;
+  right: 20px;
   cursor: pointer;
-  font-weight: bold;
-  border: 3px solid red;
-  border-radius: 3px;
-  padding: 5px;
+  font-weight: bolder;
 }
 
 .feature-list li:last-child {

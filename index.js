@@ -142,7 +142,7 @@ const toggleModal = (person) => {
 
     modal.style.display = 'flex';
 
-    modalContent.innerHTML = `<p> Well done <span class="js-name"> ${person.name}! </span> Don't forget to look at the 'Links' section for more resources </p>`
+    modalContent.innerHTML = `<p class="modal-message"> Well done <span class="js-name"> ${person.name}! </span> Don't forget to look at the 'Links' section for more resources </p>`
     
     // TODO: Update modal display to flex
     
@@ -158,7 +158,7 @@ const toggleModal = (person) => {
     setTimeout(() => {
       modal.style.display = 'none'
       clearInterval(intervalId)
-    }, 9000);
+    }, 15000);
 
     
 }
