@@ -878,14 +878,14 @@ ul.event-font.bullets li {
 .cards-section {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 40px;
   margin: 40px 20px;
 }
 
 .credit-card {
   background: white;
   border-radius: 16px;
-  padding: 30px;
+  padding: 35px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
   flex: 1;
   border: 3px solid transparent;
