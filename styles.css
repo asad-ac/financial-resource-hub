@@ -878,7 +878,7 @@ ul.event-font.bullets li {
 .cards-section {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 50px;
   margin: 40px 20px;
 }
 
