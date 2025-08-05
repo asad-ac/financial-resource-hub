@@ -528,6 +528,10 @@ input::placeholder {
   background-color: var(--bg-color-dark-mode)
 }
 
+.dark-mode .mobile-dark-mode-btn {
+  background-color: darkgoldenrod;
+}
+
 .dark-mode .modal-container {
   background-color: #1E40AF;
 }
