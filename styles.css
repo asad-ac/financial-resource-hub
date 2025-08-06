@@ -871,7 +871,7 @@ ul.event-font.bullets li {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -884,7 +884,7 @@ ul.event-font.bullets li {
 
 .credit-card {
   background: white;
-  border-radius: 16px;
+  border-radius: 15px;
   padding: 35px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
   flex: 1;
