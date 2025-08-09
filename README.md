@@ -8,4 +8,6 @@ This was a website and topic, I'm passionate about! There's a lot of information
 
 <img width="2936" height="1628" alt="image" src="https://github.com/user-attachments/assets/9e0afe98-94fe-4a48-96b2-6379d591ce30" />
 
+https://www.loom.com/share/7a04ed7cfed64cb7aa1de81b0d73f08b?sid=297d7b50-8aef-45e9-8c15-ecdbfd3626f0
+
 
