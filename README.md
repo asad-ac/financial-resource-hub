@@ -4,7 +4,7 @@ This is a website and topic I’m passionate about!
 
 There’s a lot of information to learn about credit. This site is targeted toward those seeking more knowledge and resources regarding credit and credit cards, as they are often people’s first line of credit.
 
-# ✨ Features
+# Features
 * Responsive Design – Works seamlessly on all screen sizes.
 * Semantic HTML – Improves accessibility and SEO.
 * Interactive UI –
@@ -12,11 +12,11 @@ There’s a lot of information to learn about credit. This site is targeted towa
   * Hamburger menu for mobile navigation
   * Sign-up modal for user engagement
 
-# 🚀 Next Steps
+# Next Steps
   * Add information about 401(k) and IRA accounts
   * Create a savings calculator to help users plan and manage money
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 * HTML5 (Semantic structure for accessibility & SEO)
 * CSS3 (Responsive design, theme toggle styles)
