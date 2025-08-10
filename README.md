@@ -34,6 +34,10 @@ There’s a lot of information to learn about credit. This site is targeted towa
 
 <img width="2936" height="1628" alt="image" src="https://github.com/user-attachments/assets/9e0afe98-94fe-4a48-96b2-6379d591ce30" />
 
+# 🎊 Modal
+
+<img width="2572" height="1618" alt="image" src="https://github.com/user-attachments/assets/6cac2bae-f69e-4111-899a-a875e2484bd7" />
+
 
 
 
