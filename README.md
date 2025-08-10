@@ -2,7 +2,7 @@
 
 This is a website and topic I’m passionate about! 
 
-There’s a lot of information to learn about credit. This site is targeted toward those seeking more knowledge and resources regarding credit and credit cards, as they are often people’s first line of credit.
+There’s a lot of information to learn about credit. This site addresses the problem that many people don’t know where to find financial knowledge, and is aimed at those seeking more information and resources on credit and credit cards, which are often people’s first line of credit.
 
 # Features
 * Responsive Design – Works seamlessly on all screen sizes.
