@@ -2,6 +2,7 @@
 
 This was a website and topic I’m passionate about! There’s a lot of information to learn about credit. This site is targeted toward those wanting more knowledge and resources regarding credit and some credit cards (since that tends to be people’s first line of credit).
 
+The website is responsive for all screen sizes as well as uses semantic HTML for accessibilty and search engine optimization purposes, if I ever deploy it.
 #
 
 <img width="300" height="300" alt="mobile design credit cards bad myth" src="https://github.com/user-attachments/assets/78eb90f4-3a08-4bbe-8b9f-81b923e48d12" />
