@@ -4,7 +4,7 @@ This was a website and topic I’m passionate about! There’s a lot of informat
 
 #
 
-<img width="240" height="240" alt="mobile design credit cards bad myth" src="https://github.com/user-attachments/assets/78eb90f4-3a08-4bbe-8b9f-81b923e48d12" />
+<img width="300" height="300" alt="mobile design credit cards bad myth" src="https://github.com/user-attachments/assets/78eb90f4-3a08-4bbe-8b9f-81b923e48d12" />
 
 #
 
