@@ -1,4 +1,4 @@
-# 📌 Credit Education Website
+# Credit Education Website
 
 This was a website and topic I’m passionate about! There’s a lot of information to learn about credit. This site is targeted toward those wanting more knowledge and resources regarding credit and some credit cards (since that tends to be people’s first line of credit).
 
