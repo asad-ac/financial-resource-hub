@@ -11,8 +11,8 @@ This was a website and topic I’m passionate about! There’s a lot of informat
   * Sign-up modal for user engagement
 
 # 🚀 Next Steps
-Add information about 401(k) and IRA accounts
-Create a savings calculator to help users plan and manage money
+  * Add information about 401(k) and IRA accounts
+  * Create a savings calculator to help users plan and manage money
 
 # 🛠️ Tech Stack
 
