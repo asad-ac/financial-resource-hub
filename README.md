@@ -2,7 +2,9 @@
 
 This was a website and topic I’m passionate about! There’s a lot of information to learn about credit. This site is targeted toward those wanting more knowledge and resources regarding credit and some credit cards (since that tends to be people’s first line of credit).
 
-The website is responsive for all screen sizes as well as uses semantic HTML for accessibilty and search engine optimization purposes, if I ever deploy it.
+The website is responsive for all screen sizes as well as uses semantic HTML for accessibilty and search engine optimization purposes, if I ever deploy it. It also is interactive with the user being able to toggle themes, hamburger menu for mobile, and a modal if the user chooses to sign up.
+
+Next steps would be to add information about 401k and IRA's as well as perhaps add some kind of calculator possibly regarding saving money. 
 
 # Tools Used
 * HTML
