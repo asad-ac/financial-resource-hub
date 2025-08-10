@@ -1,18 +1,24 @@
-# Credit Card Info
+# 📌 Credit Education Website
 
 This was a website and topic I’m passionate about! There’s a lot of information to learn about credit. This site is targeted toward those wanting more knowledge and resources regarding credit and some credit cards (since that tends to be people’s first line of credit).
 
-The website is:
-* Responsive for all screen sizes
-* Uses semantic HTML for accessibilty and search engine optimization purposes
-* Interactive with the user being able to toggle themes, use a hamburger menu for mobile, and a modal if the user chooses to sign up.
+# ✨ Features
+* Responsive Design – Works seamlessly on all screen sizes.
+* Semantic HTML – Improves accessibility and SEO.
+* Interactive UI –
+  * Theme toggle (light/dark mode)
+  * Hamburger menu for mobile navigation
+  * Sign-up modal for user engagement
 
-Next steps are to add information about 401(k)s and IRA's as well as potentially creating a calculator to help users plan their savings.
+# 🚀 Next Steps
+Add information about 401(k) and IRA accounts
+Create a savings calculator to help users plan and manage money
 
-# Tools Used
-* HTML
-* CSS 
-* JavaScript
+# 🛠️ Tech Stack
+
+* HTML5 (Semantic structure for accessibility & SEO)
+* CSS3 (Responsive design, theme toggle styles)
+* JavaScript (Interactivity: modal, theme toggle, menu)
 
 # Mobile Design
 
