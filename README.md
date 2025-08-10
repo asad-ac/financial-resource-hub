@@ -4,7 +4,7 @@ This was a website and topic I’m passionate about! There’s a lot of informat
 
 The website is responsive for all screen sizes as well as uses semantic HTML for accessibilty and search engine optimization purposes, if I ever deploy it. It also is interactive with the user being able to toggle themes, hamburger menu for mobile, and a modal if the user chooses to sign up.
 
-Next steps would be to add information about 401k and IRA's as well as perhaps add some kind of calculator possibly regarding saving money. 
+Next steps would be to add information about 401k and IRA's as well as potentially creating a calculator to help users plan their savings.
 
 # Tools Used
 * HTML
