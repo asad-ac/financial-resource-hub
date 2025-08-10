@@ -20,7 +20,7 @@ Create a savings calculator to help users plan and manage money
 * CSS3 (Responsive design, theme toggle styles)
 * JavaScript (Interactivity: modal, theme toggle, menu)
 
-# Mobile Design
+# Mobile Design with Hamburger Menu
 
 <img width="300" height="300" alt="mobile design credit cards bad myth" src="https://github.com/user-attachments/assets/78eb90f4-3a08-4bbe-8b9f-81b923e48d12" />
 
