@@ -36,7 +36,7 @@ A responsive and interactive website designed to help users understand and manag
 
 <img width="2936" height="1628" alt="dark mode with choosing the right credit card section" src="https://github.com/user-attachments/assets/9e0afe98-94fe-4a48-96b2-6379d591ce30" />
 
-> Dark mode with a styled navigation bar and footer for comfortable nighttime reading.
+> Dark mode with a styled navigation bar and footer for comfortable reading.
 
 # 🎊 Modal
 
