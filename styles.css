@@ -510,6 +510,15 @@ input::placeholder {
   color: white;
 }
 
+.close-modal {
+  position: absolute;
+  color: red;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
 .event-begin i {
   line-height: 1.5px;
 }
@@ -992,15 +1001,6 @@ ul.event-font.bullets li {
   padding: 8px 0;
   border-bottom: 1px solid #e5e7eb;
   color: #4b5563;
-}
-
-.close-modal {
-  position: absolute;
-  color: red;
-  top: 15px;
-  right: 20px;
-  cursor: pointer;
-  font-weight: bolder;
 }
 
 .feature-list li:last-child {
