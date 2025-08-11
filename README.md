@@ -42,7 +42,7 @@ A responsive and interactive website designed to help users understand and manag
 
 <img width="2572" height="1618" alt="pop-up displayed after user signs up" src="https://github.com/user-attachments/assets/6cac2bae-f69e-4111-899a-a875e2484bd7" />
 
-> Pop-up modal displayed after a user signs up, providing confirmation and encouraging engagement.
+> Pop-up displayed after a user signs up, providing confirmation and encouraging engagement.
 
 
 
