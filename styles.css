@@ -21,7 +21,7 @@ main {
   width: 100%;
   max-width: 100%;
 }
-/*** body ***
+
   
 
 
@@ -35,7 +35,7 @@ body {
     font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
 
     /* Put space around the edges of the webpage */
-    margin: 0 50px;
+    margin: 0 0;
     scroll-behavior: smooth;
 }
 
@@ -342,8 +342,8 @@ button:hover {
 }
 
 .rsvp-para {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .theme-button {
@@ -388,8 +388,8 @@ input::placeholder {
 }
 
 .event-begin {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .rsvp-para {
@@ -411,8 +411,6 @@ input::placeholder {
   /* Set border-color and background */
 }
 
-
-***/
 
 .modal {
   display: none;   /* modal should be hidden by default*/
@@ -655,7 +653,7 @@ ul.event-font.bullets li {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin: 40px 20px;
+  margin: 40px 100px;
 }
 
 .card {
@@ -669,6 +667,7 @@ ul.event-font.bullets li {
   border: 3px solid dodgerblue;
   line-height: 1.4;
   transition: all 0.3s ease;
+
 }
 
 #green-border {
@@ -731,6 +730,7 @@ ul.event-font.bullets li {
   margin-top: 0;
   font-size: 3.5rem;
   margin-bottom: 100px;
+  color: white;
 }
 
 .header-left {
@@ -748,6 +748,8 @@ ul.event-font.bullets li {
   text-align: center;
   padding: 15px;
   border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .bold-bullets {
@@ -829,6 +831,8 @@ ul.event-font.bullets li {
 
 .style-links {
   font-size: 1.25rem;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .call-underline {

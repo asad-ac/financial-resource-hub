@@ -41,6 +41,19 @@ mobileBtn.addEventListener('click', toggleDarkMode)
 ***/
 
 // Step 1: Add your query for the submit RSVP button here
+const header = document.getElementById('background-header');
+
+fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=work")
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+        header.style.backgroundImage = `url(${data.urls.full})`;
+        header.style.backgroundSize = 'cover';
+        header.style.backgroundAttachment = 'fixed';
+        header.style.backgroundPosition = 'center';
+        header.style.overflowX = 'hidden';
+    });
+
 
 const submitBtn = document.getElementById("rsvp-button");
 
