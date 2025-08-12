@@ -1,14 +1,4 @@
-/*** You will not need this file until Unit 3 ***/
 
-/*** VSCodeEDU preview fix 
-
-  Purpose:
-  - Fix VSCodeEDU issue that causes a white border to show around
-    the preview window
-
-  When To Modify:
-  - If you change the background color of your webpage, you may need to update this rule too.
-***/
 html {
     scroll-padding-top: 90px;
 }
@@ -33,15 +23,7 @@ main {
 }
 /*** body ***
   
-  Purpose:
-  - Add style rules for the body of your webpage
-  - This is useful if you want a rule to apply to EVERYTHING on your page
-    - (Tip: You can always override these rules later in the stylesheet)
 
-  When To Modify:
-  - [ ] Project 3 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
 
 body {
     /* Add a background color or image */
@@ -429,20 +411,7 @@ input::placeholder {
   /* Set border-color and background */
 }
 
-/* Add other rsvp-related selectors here */
-/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
-/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
 
-
-/*** Success Modal  ***
-  
-  Purpose:
-  - Add style rules to your website's pop-up modal, which appears
-    when a user successfully submits the RSVP form
-
-  When To Modify:
-  - [ ] Project 9 (REQUIRED FEATURE)
-  - [ ] Any time after
 ***/
 
 .modal {
