@@ -861,7 +861,7 @@ ul.event-font.bullets li {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -869,7 +869,7 @@ ul.event-font.bullets li {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  margin: 40px 20px;
+  margin: 40px 70px;
 }
 
 .credit-card {
@@ -1022,10 +1022,6 @@ ul.event-font.bullets li {
 
 @media (max-width: 768px) {
 
-  .container {
-    max-width: 500px;
-    margin: 0 auto;
-  }
   .card-container {
     flex-direction: column;
     align-items: center;
@@ -1038,7 +1034,7 @@ ul.event-font.bullets li {
     gap: 40px;
   }
 
-    .flex-links {
+  .flex-links {
     display: flex;
     flex-direction: column;
   }
