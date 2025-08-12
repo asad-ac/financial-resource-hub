@@ -22,6 +22,11 @@ main {
   max-width: 100%;
 }
 
+.header-right {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
   
 
 
@@ -653,7 +658,7 @@ ul.event-font.bullets li {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin: 40px 100px;
+  margin: 40px 70px;
 }
 
 .card {
@@ -1016,6 +1021,11 @@ ul.event-font.bullets li {
 }
 
 @media (max-width: 768px) {
+
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
   .card-container {
     flex-direction: column;
     align-items: center;
