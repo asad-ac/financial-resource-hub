@@ -28,7 +28,8 @@ A responsive and interactive website designed to help users understand and manag
 
 # ☀️ Light Mode
 
-<img width="2936" height="1628" alt="light mode with credit basics section" src="https://github.com/user-attachments/assets/a94f4cf4-a463-45a6-a432-57e1c7cb8cbd" />
+<img width="3000" height="1414" alt="light mode with credit basics section" src="https://github.com/user-attachments/assets/2df82b8a-316c-4f15-b4c5-f197232efddf" />
+
 
 > Clean, light-mode interface optimized for readability and accessibility.
 
