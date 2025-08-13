@@ -148,16 +148,6 @@ button:hover {
     /* Make the button look different when the user hovers over it */
 }
 
-/*** header ***
-  
-  Purpose:
-  - Add style rules for your website's header section
-
-  When To Modify:
-  - [X] Project 3 (REQUIRED FEATURE) 
-  - [ ] Project 4 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
 
 .header-container { /* Example A: This styles elements with class="header" */
     padding-top: 20px;
@@ -205,32 +195,13 @@ button:hover {
   color: white;
 }
 
-/*** footer ***
-  
-  Purpose:
-  - Add style rules for your website's footer section
 
-  When To Modify:
-  - [ ] Project 3 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
 
 .footer { /* Example B: This styles elements with class="footer" */
     
 }
 
-/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
 
-
-/*** Navigation bar (navbar) ***
-  
-  Purpose:
-  - Add style rules for your website's navbar
-
-  When To Modify:
-  - [ ] Project 4 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
 
 .navbar {
   position: fixed;
@@ -281,54 +252,7 @@ button:hover {
     color: gold;
 }
 
-/*** About Section ***
-  
-  Purpose:
-  - Add style rules for your website's About section
 
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
-
-
-/*** Schedule Section ***
-  
-  Purpose:
-  - Add style rules for your website's Schedule section
-
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
-
-
-/*** Links Section ***
-  
-  Purpose:
-  - Add style rules for your website's Links section
-
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
-
-
-/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
-
-/*** RSVP Section ***
-  
-  Purpose:
-  - Add style rules for your website's RSVP form
-
-  When To Modify:
-  - [ ] Project 6 (REQUIRED FEATURE)
-  - [ ] Project 7 (REQUIRED FEATURE)
-  - [ ] Any time after
-***/
 
 .form-container {
   display: flex;
