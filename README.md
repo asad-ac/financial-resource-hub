@@ -29,9 +29,9 @@ A responsive and interactive website designed to help users understand and manag
 
 # 🚀 Header Background via Unsplash API
 
-<img width="3024" height="1184" alt="image" src="https://github.com/user-attachments/assets/1ae12613-f083-4491-aca8-763bd0e9941a" />
+<img width="3018" height="1196" alt="header" src="https://github.com/user-attachments/assets/1ae12613-f083-4491-aca8-763bd0e9941a" />
 
-<img width="3018" height="1196" alt="image" src="https://github.com/user-attachments/assets/c51db216-f0ad-4573-911a-ec6067f20d66" />
+<img width="3018" height="1196" alt="rotating header" src="https://github.com/user-attachments/assets/c51db216-f0ad-4573-911a-ec6067f20d66" />
 
 
 > Updated header section with rotating Unsplash background images for a dynamic experience.
