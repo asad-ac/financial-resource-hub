@@ -25,9 +25,9 @@ A responsive and interactive website designed to help users understand and manag
 
 <img width="400" alt="mobile design with hamburger menu" src="https://github.com/user-attachments/assets/78eb90f4-3a08-4bbe-8b9f-81b923e48d12" />
 
-# 🚀 Header Background via Unsplash API
-
 > Mobile-friendly layout featuring an expandable hamburger menu for navigation.
+
+# 🚀 Header Background via Unsplash API
 
 <img width="3024" height="1184" alt="image" src="https://github.com/user-attachments/assets/1ae12613-f083-4491-aca8-763bd0e9941a" />
 
