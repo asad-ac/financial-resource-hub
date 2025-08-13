@@ -19,7 +19,8 @@ A responsive and interactive website designed to help users understand and manag
 
 * HTML5 (Semantic structure for accessibility & SEO)
 * CSS3 (Responsive design, theme toggle styles)
-* JavaScript (Interactivity: modal, theme toggle, menu)
+* JavaScript (Interactivity: modal, theme toggle, menu; Unsplash API for dynamic images)
+*  Unsplash API (Dynamic image fetching)
 
 # 📱 Mobile Design with Hamburger Menu
 
