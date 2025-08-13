@@ -1,46 +1,19 @@
-/*** Dark Mode ***
-  
-  Purpose:
-  - Use this starter code to add a dark mode feature to your website.
-
-  When To Modify:
-  - [ ] Project 5 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
-
-// Step 1: Select the theme button
+// dark mode button
 const themeButton = document.getElementById("theme-button")
-// Step 2: Write the callback function
 const toggleDarkMode = () => {
 
-    document.body.classList.toggle("dark-mode");
-    // Write your code here
-    // This section will run whenever the button is clicked
+  document.body.classList.toggle("dark-mode");
+    
 }
-
-// Step 3: Register a 'click' event listener for the theme button,
-//             and tell it to use toggleDarkMode as its callback function
 
 themeButton.addEventListener('click',toggleDarkMode);
 
 const mobileBtn = document.getElementById('mobile-button')
 
 mobileBtn.addEventListener('click', toggleDarkMode)
-/*** Form Handling ***
-  
-  Purpose:
-  - When the user submits the RSVP form, the name and state they 
-    entered should be added to the list of participants.
 
-  When To Modify:
-  - [ ] Project 6 (REQUIRED FEATURE)
-  - [ ] Project 6 (STRETCH FEATURE) 
-  - [ ] Project 7 (REQUIRED FEATURE)
-  - [ ] Project 9 (REQUIRED FEATURE)
-  - [ ] Any time between / after
-***/
+// get header bg
 
-// Step 1: Add your query for the submit RSVP button here
 const header = document.getElementById('background-header');
 
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=work")
@@ -54,7 +27,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         header.style.overflowX = 'hidden';
     });
 
-
+// get user info
 const submitBtn = document.getElementById("rsvp-button");
 
 const addParticipant = (person) => {
@@ -71,27 +44,9 @@ const addParticipant = (person) => {
 
 }
 
-// Step 3: Add a click event listener to the submit RSVP button here
-
 //submitBtn.addEventListener('click', addParticipant);
 
-/*** Form Validation [PLACEHOLDER] [ADDED IN UNIT 7] ***/
-
-/*** Form Validation ***
-  
-  Purpose:
-  - Prevents invalid form submissions from being added to the list of participants.
-
-  When To Modify:
-  - [ ] Project 7 (REQUIRED FEATURE)
-  - [ ] Project 7 (STRETCH FEATURE)
-  - [ ] Project 9 (REQUIRED FEATURE)
-  - [ ] Any time between / after
-***/
-
-// Step 1: We actually don't need to select the form button again -- we already did it in the RSVP code above.
-
-// Step 2: Write the callback function
+// adding error if less than 2 characters in input
 const validateForm = () => {
 
   let containsErrors = false;
@@ -130,23 +85,10 @@ const validateForm = () => {
   }
 }
 
-// Step 3: Replace the form button's event listener with a new one that calls validateForm()
 
 submitBtn.addEventListener('click', validateForm)
 
-/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
-/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
-
-/*** Modal ***
-  
-  Purpose:
-  - Use this starter code to add a pop-up modal to your website.
-
-  When To Modify:
-  - [ ] Project 9 (REQUIRED FEATURE)
-  - [ ] Project 9 (STRETCH FEATURE)
-  - [ ] Any time after
-***/
+// modal for 15 seconds displayed with entered name
 
 let modal = document.getElementById('success-modal'); // thanks model replacement?
 let modalContent = document.querySelector('.modal-paragraph');
@@ -157,23 +99,12 @@ const toggleModal = (person) => {
 
     modalContent.innerHTML = `<p class="modal-message"> Well done <span class="js-name"> ${person.name}, </span> don't forget to look at the 'Links' section for more resources. </p>`
     
-    // TODO: Update modal display to flex
-    
-
-    // TODO: Update modal text to personalized message
-
-
-    // Set modal timeout to 5 seconds
-
-
   let intervalId = setInterval(animateImage, 500);
 
     setTimeout(() => {
       modal.style.display = 'none'
       clearInterval(intervalId)
     }, 15000);
-
-    
 }
 
 const closeModal = document.getElementById('close-modal');
@@ -182,7 +113,7 @@ closeModal.addEventListener('click', function(){
   modal.style.display = 'none';
 })
 
-// TODO: animation variables and animateImage() function
+// animation variables and animateImage() function
 
 let rotateFactor = 0;
 let modalImage = document.querySelector(".modal-image");
@@ -200,7 +131,6 @@ function animateImage() {
 
   modalImage.style.transform = `rotate(${rotateFactor}deg)`
 }
-
 
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobileNav');
