@@ -27,9 +27,6 @@ main {
   margin-right: 50px;
 }
 
-  
-
-
 body {
     /* Add a background color or image */
     background-color: var(--bg-color); /* see bottom of file for color variables */
@@ -43,9 +40,6 @@ body {
     margin: 0 0;
     scroll-behavior: smooth;
 }
-
-
-
 
 h1 {
     background-color: dodgerblue;
