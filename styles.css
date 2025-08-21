@@ -45,16 +45,7 @@ body {
 }
 
 
-/*** Text ***
-  
-  Purpose: 
-  - Add style rules for headings (h1-6),
-    paragraphs (p), links (a), and buttons
 
-  When To Modify:
-  - [X] Project 3 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
 
 h1 {
     background-color: dodgerblue;
@@ -132,7 +123,6 @@ a:active {
 }
 
 button {
-    /* Example Style, replace with your own! */
     background-color: goldenrod;    /* button color */
     color: white;
     font-size: .6rem;              /* text color */
@@ -149,7 +139,7 @@ button:hover {
 }
 
 
-.header-container { /* Example A: This styles elements with class="header" */
+.header-container { 
     padding-top: 20px;
     margin-top: 30px;
     text-align: left;
@@ -429,7 +419,7 @@ input::placeholder {
 
 
 
-/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
 
 /* Default dark mode style */
 .dark-mode {
@@ -516,16 +506,6 @@ background-color: #005596;
   
 }
 
-/*** Custom Colors (OPTIONAL) ***
-  
-  Purpose:
-  - Use CSS variables to define custom colors for your website
-  - To get you started, we've provided the color scheme used in our example site.
-  - To reference a color variable in your css, use var(--variable-name) in place of a color value
-
-  When To Modify:
-  - [ ] Any time (OPTIONAL)
-***/
 
 :root {
     /* Light Mode */
