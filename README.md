@@ -21,6 +21,32 @@ A responsive and interactive website designed to help users understand and manag
 * CSS3 (Responsive design, theme toggle styles)
 * JavaScript (Interactivity: modal, theme toggle, menu)
 * Unsplash API (Dynamic image fetching)
+ 
+
+
+
+# 📥 Getting Started  
+
+Run this project locally with the following steps:  
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/yourusername/credit-education-website.git
+
+2. **Navigate into the project folder**  
+   ```bash
+   cd credit-education-website
+
+3. **Open the website in your browser**  
+   You can either:  
+
+   * Open `index.html` directly in your browser, **or**  
+   * Start a local development server (recommended for live reload):  
+     ```bash
+     # If using VS Code, open the project:
+     code .
+     # Then start Live Server from the VS Code status bar
+     ```  
 
 # 📱 Mobile Design with Hamburger Menu
 
@@ -56,6 +82,18 @@ A responsive and interactive website designed to help users understand and manag
 <img width="2572" height="1618" alt="pop-up displayed after user signs up" src="https://github.com/user-attachments/assets/6cac2bae-f69e-4111-899a-a875e2484bd7" />
 
 > Pop-up displayed after a user signs up, providing confirmation and encouraging engagement.
+
+# 🤝 Contributing & Contact  
+
+Have ideas to improve this project or want to collaborate?  
+
+* **Open an Issue:** Share bugs, feature requests, or suggestions.  
+* **Submit a Pull Request:** Fork the repo and contribute directly.  
+* **Reach Out:** If you’d like to discuss this project or work on it together, feel free to connect:  
+  - [LinkedIn](https://www.linkedin.com/in/asad-a-chaudhry/)  
+  - [Email](mailto:asadachau@gmail.com)  
+
+Contributions, feedback, and suggestions are always welcome!
 
 
 
