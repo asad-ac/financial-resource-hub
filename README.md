@@ -13,7 +13,7 @@ A responsive and interactive website designed to help users understand and manag
 
 ## Future Enhancements
   * Add information about 401(k) and IRA accounts
-  * Create a server to send confirmation email for newsletter
+  * Create a server to send confirmation email for sign-up form
 
 ## Tech Stack
 
