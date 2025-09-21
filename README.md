@@ -13,7 +13,7 @@ A responsive and interactive website designed to help users understand and manag
 
 ## Future Enhancements
   * Add information about 401(k) and IRA accounts
-  * Create a **savings calculator** to help users plan and manage money
+  * Create a server to send confirmation email for newsletter
 
 ## Tech Stack
 
@@ -57,14 +57,12 @@ Run this project locally with the following steps:
 
 <img width="3018" height="1196" alt="rotating header" src="https://github.com/user-attachments/assets/c51db216-f0ad-4573-911a-ec6067f20d66" />
 
-
 > Updated header section with rotating Unsplash background images for a dynamic experience.
 
 
 ## ☀️ Light Mode
 
 <img width="3000" height="1414" alt="light mode with credit basics section" src="https://github.com/user-attachments/assets/2df82b8a-316c-4f15-b4c5-f197232efddf" />
-
 
 > Clean, light-mode interface optimized for readability and accessibility.
 
