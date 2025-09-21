@@ -80,7 +80,7 @@ Run this project locally with the following steps:
 
 > Pop-up displayed after a user signs up, providing confirmation and encouraging engagement.
 
-## 🤝 Contributing & Contact  
+## Contributing & Contact  
 
 Have ideas to improve this project or want to collaborate?  
 
